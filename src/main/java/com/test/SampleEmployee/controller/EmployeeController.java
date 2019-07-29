@@ -1,7 +1,7 @@
 package com.test.SampleEmployee.controller;
 
 import com.test.SampleEmployee.model.Employee;
-import com.test.SampleEmployee.repository.EmployeeRepository;
+import com.test.SampleEmployee.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,20 +13,21 @@ import java.util.List;
 @RestController
 @RequestMapping(path = "/employees")
 public class EmployeeController {
+
     @Autowired
-    private EmployeeRepository employeeRepository;
+    private EmployeeService employeeService;
 
     @GetMapping(path = "/", produces = "application/json")
     public List<Employee> getEmployees() {
-        return employeeRepository.getAllEmployees();
+        return employeeService.getAllEmployees();
     }
 
     @PostMapping(path = "/", consumes = "application/json", produces = "application/json")
     public ResponseEntity<Object> addEmployee(@RequestBody Employee employee) {
-        Integer id = employeeRepository.getAllEmployees().size() + 1;
+        Integer id = employeeService.getAllEmployees().size() + 1;
         employee.setId(id);
 
-        employeeRepository.addEmployee(employee);
+        employeeService.addEmployee(employee);
 
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")

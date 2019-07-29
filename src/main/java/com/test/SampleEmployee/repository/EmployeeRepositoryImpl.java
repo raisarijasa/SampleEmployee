@@ -12,7 +12,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     private static List<Employee> list = new ArrayList<>();
 
     static {
-        list.add(new Employee(1, "FName1", "LName1", "user.one@email.com"));
+        list.add(new Employee(1, "FName1 Update", "LName1", "user.one@email.com"));
         list.add(new Employee(2, "FName2", "LName2", "user.two@email.com"));
         list.add(new Employee(3, "FName3", "LName3", "user.three@email.com"));
         list.add(new Employee(4, "FName4", "LName4", "user.four@email.com"));

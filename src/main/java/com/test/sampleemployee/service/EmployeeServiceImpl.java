@@ -1,8 +1,8 @@
-package com.test.SampleEmployee.service;
+package com.test.sampleemployee.service;
 
-import com.test.SampleEmployee.helper.Constant;
-import com.test.SampleEmployee.model.Employee;
-import com.test.SampleEmployee.repository.EmployeeRepository;
+import com.test.sampleemployee.helper.Constant;
+import com.test.sampleemployee.model.Employee;
+import com.test.sampleemployee.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

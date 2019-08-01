@@ -1,7 +1,7 @@
-package com.test.SampleEmployee.repository;
+package com.test.sampleemployee.repository;
 
-import com.test.SampleEmployee.helper.Constant;
-import com.test.SampleEmployee.model.Employee;
+import com.test.sampleemployee.helper.Constant;
+import com.test.sampleemployee.model.Employee;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

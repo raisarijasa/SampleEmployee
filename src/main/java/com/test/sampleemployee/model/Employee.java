@@ -1,4 +1,4 @@
-package com.test.SampleEmployee.model;
+package com.test.sampleemployee.model;
 
 public class Employee extends BaseModel {
     private String firstName;

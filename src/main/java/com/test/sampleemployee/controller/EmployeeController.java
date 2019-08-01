@@ -1,7 +1,7 @@
-package com.test.SampleEmployee.controller;
+package com.test.sampleemployee.controller;
 
-import com.test.SampleEmployee.model.Employee;
-import com.test.SampleEmployee.service.EmployeeService;
+import com.test.sampleemployee.model.Employee;
+import com.test.sampleemployee.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

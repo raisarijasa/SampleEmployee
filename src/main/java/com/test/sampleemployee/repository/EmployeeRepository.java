@@ -1,6 +1,6 @@
-package com.test.SampleEmployee.repository;
+package com.test.sampleemployee.repository;
 
-import com.test.SampleEmployee.model.Employee;
+import com.test.sampleemployee.model.Employee;
 
 import java.util.List;
 

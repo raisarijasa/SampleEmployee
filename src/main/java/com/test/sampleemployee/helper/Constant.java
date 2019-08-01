@@ -5,5 +5,6 @@ public class Constant {
     public static final int CODE_FAILED = 0;
 
     private Constant() {
+        throw new IllegalStateException("Constant");
     }
 }
